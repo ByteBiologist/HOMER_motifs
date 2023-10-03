@@ -3,6 +3,7 @@
 This repository contains a set of Python scripts to automate various tasks related to processing Homer known motifs. The pipeline is designed to work with different genome builds and perform motif analysis.
 
 Usage
+
 Here's a general overview of how to use the Homer pipeline scripts:
 
 1. Download Raw BED Files: Use **download.py** to download the raw BED files. Provide the desired genome build as an argument [hg19, hg38]. This step sets up the initial dataset.
