@@ -4,7 +4,7 @@ HOMER Known Motifs
 
 This collection of Python scripts automates various tasks associated with processing Homer known motifs. This pipeline is designed to work with genome builds hg19/hg38 and perform motif analysis.
 
-##Usage
+## Usage
 
 Here's a overview of how to use the Homer pipeline scripts:
 
