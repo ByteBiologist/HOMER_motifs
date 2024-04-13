@@ -1,15 +1,26 @@
 # HOMER Data processing
 
-This repository contains a set of Python scripts to automate various tasks related to processing Homer known motifs. The pipeline is designed to work with different genome builds and perform motif analysis.
+HOMER Known Motifs 
 
-Usage
+This collection of Python scripts automates various tasks associated with processing Homer known motifs. This pipeline is designed to work with genome builds hg19/hg38 and perform motif analysis.
 
-Here's a general overview of how to use the Homer pipeline scripts:
+##Usage
 
-1. Download Raw BED Files: Use **download.py** to download the raw BED files. Provide the desired genome build as an argument [hg19, hg38]. This step sets up the initial dataset.
+Here's a overview of how to use the Homer pipeline scripts:
 
-2. Collect Motif Information (One-Time Step): Run **get_motif_info.py** to gather information about individual motifs from the Homer database. This step is necessary before processing the BED files.
+#### Step 1) Download and split HOMER known motifs data in BED format 
+Download and split the HOMER known motifs data. Specify the genome build as an argument (hg19/hg38).
+  **python download.py hg[19/38]** 
 
-3. Process BED Files: Execute **generate_output_bed.py** to process the downloaded BED files using the collected motif information. Provide the genome build as an argument [hg19, hg38].
-4. Advanced Processing: **motif_score.py** is a part of step 3, used for motif score calculations, on specific files. Ensure that the necessary motif information has been collected in step 2.
+#### Step 2) Collect Motif Information
+Gather information about individual motifs from the Homer database and download position frequency matrix files. This step is necessary before processing the BED files.
+  **python get_motif_info.py**
+
+#### Step 3) Process downloaded BED Files
+Process the downloaded motif files using motif information collected in step 2. Specify genome build as an argument (hg19/hg38).
+  **python generate_output_bed.py**
+  
+##### sub step 3a) motif score calculations
+During Step 3 processing, the motif_score.py script is called upon when necessary for motif score calculations.
+  **motif_score.py** 
 
