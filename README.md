@@ -14,7 +14,7 @@ Download and split the HOMER known motifs data. Specify the genome build as an a
 
 #### Step 2) Collect Motif Information
 Gather information about individual motifs from the Homer database and download position frequency matrix files. This step is necessary before processing the BED files.
-  **python get_motif_info.py**
+**python get_motif_info.py**
 
 #### Step 3) Process downloaded BED Files
 Process the downloaded motif files using motif information collected in step 2. Specify genome build as an argument (hg19/hg38).
