@@ -4,6 +4,17 @@ HOMER Known Motifs
 
 This collection of Python scripts automates various tasks associated with processing Homer known motifs. This pipeline is designed to work with genome builds hg19/hg38 and perform motif analysis.
 
+## Installation
+1. Clone this repository:
+    ```bash
+    git clone git@github.com:ByteBiologist/HOMER_motifs.git
+    cd HOMER_motifs
+    ```
+2. Dependencies:
+   * samtools
+   * hg19 reference genome "hg19.fa" [https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz]
+   * hg38 reference genome "hg38.fa" [https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz]
+
 ## Usage
 
 Here's a overview of how to use the Homer pipeline scripts:
